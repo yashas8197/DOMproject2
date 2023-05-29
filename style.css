@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400&display=swap');
+
+
+body{
+    font-family: 'Open Sans', sans-serif; 
+    background: url(./images/geran-de-klerk-WJkc3xZjSXw-unsplash.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#open-btn{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 1.7rem;
+    border: 2px solid #fff;
+    padding: 1px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    width: 350px;
+    box-shadow: 0 0 3px black;
+}
