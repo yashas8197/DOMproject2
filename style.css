@@ -20,4 +20,63 @@ body{
     color: white;
     width: 350px;
     box-shadow: 0 0 3px black;
+    transition: .5s;
 }
+
+#open-btn:hover{
+    background-color: #fff;
+    color: black;
+    transition: 1s;
+}
+
+.model{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   width: 200px;
+   height: 100px;
+   padding: 10px 20px;
+   font-size: 1.5rem;
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   animation-name: animatemodel;
+   animation-duration: 1s;
+}
+
+#close-btn{
+    font-size: 3rem;
+}
+
+#close-btn:hover{
+    cursor: pointer;
+    color: red;
+    transition: .5s;
+}
+
+#model-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+@keyframes animatemodel{
+    from{
+        top: -50%;
+        opacity: 0;
+    }
+
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
+
